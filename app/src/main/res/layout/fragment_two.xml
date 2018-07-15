@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00ffffff"
+    tools:context="com.jungcode.jm2.jm2.TwoFragment">
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText">
+
+        <ListView
+            android:id="@+id/listView"
+            android:paddingTop="0dp"
+            android:layout_width="fill_parent"
+            android:divider="@null"
+            android:layout_height="fill_parent">
+        </ListView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:SpinKit_Color="#388E3C"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:hint="검색어를 입력하세요."
+        android:textColorHint="#62000000"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#b1000000" />
+
+    <Button
+        android:text="검색"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentEnd="true"
+        style="@style/Theme.Calculator.ButtonStyle.Digit"/>
+
+
+</RelativeLayout>

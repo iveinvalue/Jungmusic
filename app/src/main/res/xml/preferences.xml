@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="사용자 설정">
+        <Preference
+            android:title="리딤코드 입력"
+            android:key="cupon" />
+        <Preference
+            android:title="캐시정리"
+            android:key="cache" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="앱 정보">
+        <Preference
+            android:title="앱 버전"
+            android:key="info" />
+        <Preference
+            android:title="오픈소스 라이브러리"
+            android:key="open" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
+

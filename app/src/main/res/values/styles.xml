@@ -1,0 +1,70 @@
+<resources xmlns:custom="http://schemas.android.com/tools" xmlns:android="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#388E3C</item>
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#717b82</item>
+        <item name="colorControlHighlight">#00CC55</item>
+        <item name="colorControlNormal">#ff757c</item>
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
+       <item name="android:windowActionBarOverlay">true</item>
+       <!--For compatibility-->
+        <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+
+   </style>
+
+   <color name="transparent_black">#80000000</color>
+   <style name="MyActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+       <item name="android:background">@color/transparent_black</item>
+       <!--For compatibility-->
+        <item name="background">@color/transparent_black</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#388E3C</item>
+        <item name="colorPrimary">#186E8F </item>
+        <item name="colorPrimaryDark">#0E5672</item>
+        <item name="colorControlHighlight">#00CC55</item>
+        <item name="colorControlNormal">#FF0000</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">#ffffff</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="christmas.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#388E3C</item>
+        <item name="colorPrimary">#a50c0a </item>
+        <item name="colorPrimaryDark">#840a09</item>
+        <item name="colorControlHighlight">#00CC55</item>
+        <item name="colorControlNormal">#FF0000</item>
+    </style>
+
+    <style name="Theme.Calculator.Display" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#0E5672</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-thin"</item>
+
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="Theme.Calculator.ButtonStyle.Digit" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#595959</item>
+        <item name="android:fontFamily">sans-serif-thin"</item>
+    </style>
+
+
+
+</resources>

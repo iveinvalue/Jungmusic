@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp">
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/artist_small"
+        android:layout_marginLeft="5dp"
+        android:layout_toStartOf="@+id/exit"
+        android:background="#00000000"
+        android:text="재생"
+        android:textColor="#d40c29"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/play"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/play"
+        android:layout_marginLeft="5dp"
+        android:background="#00000000"
+        android:text="종료"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/art_small"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/music" />
+
+    <TextView
+        android:id="@+id/tittle_small"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/artist_small"
+        android:layout_toEndOf="@+id/art_small"
+        android:layout_toStartOf="@+id/previous"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="노래제목"
+        android:textColor="#d40c29"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/artist_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/art_small"
+
+
+        android:layout_toEndOf="@+id/art_small"
+        android:layout_toStartOf="@+id/previous"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="2dp"
+        android:paddingRight="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="노래아티스트"
+        android:textColor="#6e6e6e"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/art_small"
+        android:layout_marginLeft="5dp"
+        android:layout_toStartOf="@+id/play"
+        android:background="#00000000"
+        android:textColor="#3d3d3d"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/play"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#00000000"
+        android:textColor="#3d3d3d"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/gotoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/art_small"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/play"
+        android:background="#00000000"
+        android:text=" "
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="인증 설정">
+        <Preference
+            android:title="쿠폰번호"
+            android:key="cupon" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="사용자 설정">
+        <CheckBoxPreference
+            android:title="반복 재생"
+            android:defaultValue="false"
+            android:key="loop"  />
+        <CheckBoxPreference
+            android:title="랜덤 재생"
+            android:defaultValue="false"
+            android:key="random"  />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="앱 정보">
+        <Preference
+            android:title="버전 및 오프소스"
+            android:key="version" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Category 1">
+        <CheckBoxPreference
+            android:title="Newsletter"
+            android:defaultValue="false"
+            android:key="Newskey"  />
+        <EditTextPreference android:key="Namekey"
+            android:title="Enter your name: "
+            android:dialogTitle="Enter your name" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Category 2">
+        <RingtonePreference android:showDefault="true"
+            android:key="Audio" android:title="Select sound"
+            android:ringtoneType="notification" >
+        </RingtonePreference>
+        <ListPreference android:title="Products List "
+            android:key="products_list"
+            android:entries="@array/products"
+            android:entryValues="@array/prodselected"
+            android:dialogTitle="Choose a product" >
+        </ListPreference>
+    </PreferenceCategory>
+    <Preference
+        android:title="Submit"
+        android:key="submitPref" />
+</PreferenceScreen>
+

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jungcode.jm2.jm2.OneFragment">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:SpinKit_Color="#FF4081" />
+
+
+    <View android:id="@+id/emiter_top_left"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="-50dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:foregroundGravity="top|left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <View android:id="@+id/emiter_top_right"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="-50dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:foregroundGravity="top|right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:layout_toEndOf="@+id/emiter_top_left"
+        android:layout_below="@+id/number_progress_bar">
+
+        <ListView
+            android:id="@+id/listView"
+            android:paddingTop="0dp"
+            android:layout_width="fill_parent"
+            android:divider="@null"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            android:cacheColorHint="#00000000"
+            android:scrollingCache="false">
+        </ListView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00ffffff"
+    tools:context="com.jungcode.jm2.jm2.ThreeFragment">
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:paddingTop="0dp"
+            android:layout_width="fill_parent"
+            android:divider="@null"
+            android:cacheColorHint="#00000000"
+            android:layout_height="fill_parent">
+        </ListView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:SpinKit_Color="#388E3C"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

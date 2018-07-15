@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">음악</string>
+    <string name="tab">\u0009</string>
+
+
+    <string-array name="products">
+        <item>Camera</item>
+        <item>Laptop</item>
+        <item>Watch</item>
+        <item>Smartphone</item>
+        <item>Television</item>
+    </string-array>
+    <string-array name="prodselected">
+        <item>You have selected Camera</item>
+        <item>You have selected Laptop</item>
+        <item>You have selected Watch</item>
+        <item>You have selected Smartphone</item>
+        <item>You have selected Television</item>
+    </string-array>
+
+</resources>

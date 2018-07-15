@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/code"
+        android:icon="@drawable/ic_circle"
+        android:title="쿠폰번호"/>
+    <item
+        android:id="@+id/cache"
+        android:icon="@drawable/ic_circle"
+        android:title="캐시정리"/>
+    <item
+        android:id="@+id/appinfo"
+        android:icon="@drawable/ic_circle"
+        android:title="앱 정보"/>
+</menu>

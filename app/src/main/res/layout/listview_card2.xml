@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="#fafafa"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jungcode.jm2.jm2.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="#00ffffff">
+
+
+        <TextView
+            android:id="@+id/mDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Date"
+            android:textColor="#00000000"
+            android:textSize="1sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/mImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/nouse"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mImage"
+            android:layout_alignEnd="@+id/mImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/mImage"
+            android:gravity="bottom|right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/nouse"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignTop="@+id/mImage"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/count"
+            android:scaleType="fitXY"
+            android:src="@mipmap/music"
+            android:transitionName="image" />
+
+        <ImageView
+            android:id="@+id/mImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/count"
+            android:scaleType="fitXY"
+            android:transitionName="image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_toEndOf="@+id/textView"
+            android:background="#00ffffff">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp"
+                android:layout_toStartOf="@+id/button2"
+                android:background="#00ffffff" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/mText2"
+                android:layout_marginLeft="0dp"
+                android:background="#31000000"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/mcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:phoneNumber="true"
+                android:text="dd"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#00000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/mText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/space"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_toStartOf="@+id/button2"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingBottom="2dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Text"
+                android:textColor="#bb000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:transitionName="title" />
+
+            <TextView
+                android:id="@+id/mText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mText"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_toStartOf="@+id/button2"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingTop="2dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Text"
+                android:textColor="#a6000000"
+                android:textSize="13sp"
+                android:transitionName="artist" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/downcheck"
+                android:layout_alignEnd="@+id/downcheck"
+                android:layout_alignStart="@+id/downcheck"
+                android:layout_alignTop="@+id/downcheck"
+                android:background="#00ffffff" />
+
+            <ImageView
+                android:id="@+id/downcheck"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/card_view"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/card_view"
+                android:layout_margin="15dp"
+                android:scaleType="fitEnd" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
