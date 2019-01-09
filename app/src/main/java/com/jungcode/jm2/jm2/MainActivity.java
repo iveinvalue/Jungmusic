@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
                 if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
 
-                    posthttp3("https://raw.githubusercontent.com/iveinvalue/Jungmusic/master/info.txt");//인증서버
+                    posthttp3("https://raw.githubusercontent.com/iveinvalue/Jungmusic-android/master/info.txt");//인증서버
                     parse = parse.replace("\\\\", "qwer");//전체파싱
                     parse = parse.replace("|", "qwer");
                     uxtk1 = parse.split("uxtk!");//uxtk파싱
