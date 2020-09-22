@@ -13,9 +13,9 @@
 
 ## Introduction
 **Jung Music Player**</br>
-<img src='https://github.com/jungh0/Jungmusic-android/blob/master/resource/1.png' width='300px'/>
-<img src='https://github.com/jungh0/Jungmusic-android/blob/master/resource/2.png' width='300px'/>
-<img src='https://github.com/jungh0/Jungmusic-android/blob/master/resource/3.png' width='300px'/>
+<img src='https://github.com/jungh0/Jungmusic-android/blob/master/resource/1.png' width='250px'/>
+<img src='https://github.com/jungh0/Jungmusic-android/blob/master/resource/2.png' width='250px'/>
+<img src='https://github.com/jungh0/Jungmusic-android/blob/master/resource/3.png' width='250px'/>
 
 ## Architecture
 <img width="600px" src="https://user-images.githubusercontent.com/8678595/66544658-b7dd2280-eb73-11e9-9872-089b1f452f4f.png">
